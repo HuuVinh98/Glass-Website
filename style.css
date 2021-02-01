@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+main
+{
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.glass
+{
+    min-height: 80vh;
+    background: white;
+    width: 60%;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+    z-index: 2;
+    backdrop-filter: blur(2rem);
+    display: flex;
+}
+.circle1, .circle2
+{
+    background: white;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.8), rgba(255,255,255,0.3));
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    border-radius: 50%;
+}
+.circle1
+{
+    top:1%;
+    right: 13%;
+}
+.circle2
+{
+    bottom:1%;
+    left: 13%;
+}
+.dashboard
+{
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    text-align: center;
+    background: linear-gradient(to right bottom, rgba(255,255,255,0.7), rgba(255,255,255,0.3));
+    border-radius: 2rem;
+}
+.link
+{
+    display: flex;
+    margin: 5px 0rem;
+    padding: 5px 10px;
+    align-items: center;
+}
+.link h2 
+{
+    padding: 0px 10px;
+}
+.game
+{
+    flex:2;
+}
+.pro
+{
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    border-radius: 2rem;
+    color: white;
+    height: 25px;
+    width: 200px;
+    position: relative;
+}
+.pro img 
+{
+    width: 75px;
+    height: 50px;
+    position: absolute;
+    top:-10%;
+    right: 10%;
+}
+.game
+{
+    margin: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+}
+.status
+{
+    margin: 20px 20px;
+}
+.status h3{
+    font-weight: bold;
+    font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+    text-align: left;
+}
+.status input
+{
+    border-radius: 1rem;
+    border: none;
+}
+.card
+{
+    display: flex;
+    background: linear-gradient(to left top , rgba(255,255,255,0.2), rgba(255,255,255,0.5));
+    border-radius: 20px;
+    margin: 20px 20px;
+    padding:20px;
+    box-shadow: 6px 6px 20px rgba(122,122,122,0.2);
+    justify-content: space-between;
+}
+.card img
+{
+    width: 60px;
+    height: 60px;
+}
+.progress
+{
+    background: linear-gradient(to right top,#65dfc9,#6cdbeb);
+    width: 100%;
+    height: 25%;
+    border-radius: 1rem;
+    position: relative;
+    overflow: hidden;
+}
+.progress::after
+{
+    content: "";
+    width: 100%;
+    height: 100%;
+    background: rgb(236,236,236);
+    position: absolute;
+    left: 60%;
+}
+.card-info
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.percentage
+{
+    font-weight: bold;
+}
